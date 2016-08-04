@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ru_urvanov_employeelist_domain_Employee" object="${employee}" path="/employees" z="OMJ8SeWD0q6eXelP0z3rqbW6DDA=">
+        <field:display field="surname" id="s_ru_urvanov_employeelist_domain_Employee_surname" object="${employee}" z="0VcjIWUs/jsq1eFN9KH8ssHxNgw="/>
+        <field:display field="name" id="s_ru_urvanov_employeelist_domain_Employee_name" object="${employee}" z="ZlgvWnr4tYHgYN2xvmPCqop4ioI="/>
+        <field:display field="patronymic" id="s_ru_urvanov_employeelist_domain_Employee_patronymic" object="${employee}" z="f7SuQ6KsdEhDsA3Zn4MMWq5G3pQ="/>
+        <field:display field="department" id="s_ru_urvanov_employeelist_domain_Employee_department" object="${employee}" z="P7fqwnbvFz9yLG0Nga/dNRsookU="/>
+        <field:display field="employeePosition" id="s_ru_urvanov_employeelist_domain_Employee_employeePosition" object="${employee}" z="bCVRKPZG8WNCq1lc6GuMEpsLcx4="/>
+    </page:show>
+</div>

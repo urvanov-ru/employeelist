@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ru_urvanov_employeelist_domain_Employee" modelAttribute="employee" path="/employees" render="${empty dependencies}" z="EDg+XM46RWjxWSGBfN7tRvu7GQE=">
+        <field:input field="surname" id="c_ru_urvanov_employeelist_domain_Employee_surname" z="IK2dw8frUnKo0Ml8qw1BLfwB1sc="/>
+        <field:input field="name" id="c_ru_urvanov_employeelist_domain_Employee_name" z="JY373r6lSJVPHN4tV51lOp+IECY="/>
+        <field:input field="patronymic" id="c_ru_urvanov_employeelist_domain_Employee_patronymic" z="6anSwWxJuMtVJbmVfZ3qENZjYFU="/>
+        <field:select field="department" id="c_ru_urvanov_employeelist_domain_Employee_department" itemValue="id" items="${departments}" path="/departments" required="true" z="66UkT1ibXcGrJ5CUEWs3ASHlN3I="/>
+        <field:select field="employeePosition" id="c_ru_urvanov_employeelist_domain_Employee_employeePosition" itemValue="id" items="${employeepositions}" path="/employeepositions" required="true" z="iDnXjDbyMYNCK9wuA0Nz3HXmLGE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ru_urvanov_employeelist_domain_Employee" render="${not empty dependencies}" z="+JeuonlrZxabGcsY70fvfIyfZZE="/>
+</div>

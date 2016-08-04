@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ru_urvanov_employeelist_domain_Employee" items="${employees}" z="cx/NCh1AEJLgh9Sqbl4RELDRrlg=">
+        <table:table data="${employees}" id="l_ru_urvanov_employeelist_domain_Employee" path="/employees" z="S0K34OAj2qgEE7E2jpvcNPnJWM0=">
+            <table:column id="c_ru_urvanov_employeelist_domain_Employee_surname" property="surname" z="YTh8erCSsLZzxB1bvctb0vxiMcQ="/>
+            <table:column id="c_ru_urvanov_employeelist_domain_Employee_name" property="name" z="baX3eSI7Jc970IJTOZS9i9OJsxg="/>
+            <table:column id="c_ru_urvanov_employeelist_domain_Employee_patronymic" property="patronymic" z="ZWTGyYyByVuKrgpfhwD00UzvOfQ="/>
+            <table:column id="c_ru_urvanov_employeelist_domain_Employee_department" property="department" z="gO2osOp494bO+3gQ2rZWwZhyn1o="/>
+            <table:column id="c_ru_urvanov_employeelist_domain_Employee_employeePosition" property="employeePosition" z="xd72wxksmX0cc7RdIjkZqsQw+c4="/>
+        </table:table>
+    </page:list>
+</div>

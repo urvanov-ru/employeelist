@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ru_urvanov_employeelist_domain_Employee" modelAttribute="employee" path="/employees" versionField="Version" z="rcRFruDTIB6C9ds78EtAQrOvsa4=">
+        <field:input field="surname" id="c_ru_urvanov_employeelist_domain_Employee_surname" z="IK2dw8frUnKo0Ml8qw1BLfwB1sc="/>
+        <field:input field="name" id="c_ru_urvanov_employeelist_domain_Employee_name" z="JY373r6lSJVPHN4tV51lOp+IECY="/>
+        <field:input field="patronymic" id="c_ru_urvanov_employeelist_domain_Employee_patronymic" z="6anSwWxJuMtVJbmVfZ3qENZjYFU="/>
+        <field:select field="department" id="c_ru_urvanov_employeelist_domain_Employee_department" itemValue="id" items="${departments}" path="/departments" required="true" z="66UkT1ibXcGrJ5CUEWs3ASHlN3I="/>
+        <field:select field="employeePosition" id="c_ru_urvanov_employeelist_domain_Employee_employeePosition" itemValue="id" items="${employeepositions}" path="/employeepositions" required="true" z="iDnXjDbyMYNCK9wuA0Nz3HXmLGE="/>
+    </form:update>
+</div>

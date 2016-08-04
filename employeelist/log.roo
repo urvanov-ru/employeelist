@@ -1,0 +1,24 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2016-08-04 08:33:10
+project --topLevelPackage ru.urvanov.employeelist --projectName employeelist --java 6 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2016-08-04 08:33:14
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2016-08-04 08:33:28
+hint
+jpa setup --provider HIBERNATE --database H2_IN_MEMORY 
+hint
+entity jpa --class ~.domain.Employee --table employee --testAutomatically
+field string --fieldName surname --sizeMax 100
+field string --fieldName name --sizeMax 100
+field string --fieldName patronymic --sizeMax 100
+// [failed] entity jpa --class ~.domain.Position --table position --testAutomatically 
+// [failed] field string --fieldName descr --notNull --sizeMin 1 --sizeMax 100
+entity jpa --class ~.domain.EmployeePosition --table employee_position --testAutomatically 
+field string --fieldName descr --notNull --sizeMin 1 --sizeMax 100
+entity jpa --class ~.domain.Department --table department --testAutomatically 
+field string --fieldName descr --notNull --sizeMin 1 --sizeMax 100
+field reference --fieldName department --type ~.domain.Department --class ~.domain.Employee --joinColumnName department_id --notNull
+field reference --fieldName employeePosition --type ~.domain.EmployeePosition --joinColumnName employee_position_id --notNull
+hint
+hint web mvc
+web mvc setup
+web mvc all --package ~.web
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2016-08-04 10:27:47
